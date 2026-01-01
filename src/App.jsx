@@ -22,7 +22,7 @@ const App = () => {
       >
         <Try cat={CATS[showcat]} />
       </motion.div>
-      <div className="flex space-x-4">
+      <div className="flex space-x-4">  
         {showcat < CATS.length - 1 && (
           <motion.button
             whileHover={{ scale: 1.2 }}
