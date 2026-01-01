@@ -2,6 +2,7 @@ import Try from "./Components/Try";
 import CATS from "./Data/catData";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/next";
 const App = () => {
   const [showcat, setCat] = useState(0);
   return (
@@ -43,6 +44,7 @@ const App = () => {
           </motion.button>
         )}
       </div>
+      <Analytics />
     </motion.div>
   );
 };
